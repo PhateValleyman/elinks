@@ -83,11 +83,11 @@
 
 /* Default mime settings */
 #define DEFAULT_MIME_TYPE		"application/octet-stream"
-#define DEFAULT_PAGER_PATH		"/system/bin/pager"
-#define DEFAULT_LESS_PATH		"/system/bin/less"
-#define DEFAULT_MORE_PATH		"/system/bin/more"
-#define DEFAULT_MAILCAP_PATH		"~/.mailcap:/system/etc/mailcap:/system/share/mailcap"
-#define DEFAULT_MIMETYPES_PATH		"~/.mime.types:/system/etc/mime.types:/system/share/mime.types"
+#define DEFAULT_PAGER_PATH		"/usr/bin/pager"
+#define DEFAULT_LESS_PATH		"/usr/bin/less"
+#define DEFAULT_MORE_PATH		"/usr/bin/more"
+#define DEFAULT_MAILCAP_PATH		"~/.mailcap:/etc/mailcap:/usr/etc/mailcap:/usr/local/etc/mailcap:/usr/share/mailcap:/usr/share/misc/mailcap"
+#define DEFAULT_MIMETYPES_PATH		"~/.mime.types:/etc/mime.types:/usr/etc/mime.types:/usr/local/etc/mime.types:/usr/share/mime.types:/usr/share/misc/mime.types"
 
 /* Default external commands (see osdep/newwin.c and/or system-specific osdep/
  * files) */

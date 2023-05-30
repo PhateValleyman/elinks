@@ -5,7 +5,7 @@
 #include <unistd.h>
 
 struct stat st;
-char *file = "/data/local/tmp/log";
+char *file = "/tmp/log";
 unsigned char *data;
 int counter = 0;
 

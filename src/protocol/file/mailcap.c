@@ -110,7 +110,7 @@ mailcap_protocol_handler(struct connection *conn)
 		/* We implicitly chain stderr to ELinks' stderr. */
 		close_all_non_term_fd();
 
-		if (execl("/bin/sh", "/bin/sh", "-c", script, (char *) NULL)) {
+		if (execl("/system/bin/sh", "/system/bin/sh", "-c", script, (char *) NULL)) {
 			_exit(3);
 		}
 

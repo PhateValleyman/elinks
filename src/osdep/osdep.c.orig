@@ -296,7 +296,6 @@ is_gnuscreen(void)
 int
 is_xterm(void)
 {
-#ifndef __TERMUX__
 	static int xt = -1;
 
 	if (xt == -1) {
@@ -327,9 +326,6 @@ is_xterm(void)
 	}
 
 	return xt;
-#else
-	return 1; /* Skip checking and always return true on Termux */
-#endif
 }
 
 #endif

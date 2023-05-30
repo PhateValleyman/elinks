@@ -186,7 +186,7 @@ get_tempdir_filename(unsigned char *name)
 	if (!tmpdir || !*tmpdir) tmpdir = getenv("TMP");
 	if (!tmpdir || !*tmpdir) tmpdir = getenv("TEMPDIR");
 	if (!tmpdir || !*tmpdir) tmpdir = getenv("TEMP");
-	if (!tmpdir || !*tmpdir) tmpdir = "/tmp";
+	if (!tmpdir || !*tmpdir) tmpdir = "/data/local/tmp";
 
 	return straconcat(tmpdir, "/", name, (unsigned char *) NULL);
 }

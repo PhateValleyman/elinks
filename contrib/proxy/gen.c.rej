@@ -1,0 +1,11 @@
+--- gen.c
++++ gen.c
+@@ -17,7 +17,7 @@ struct {
+ } tab[100000]; /* should be enough */
+ 
+ unsigned char header[] =
+-"#!/usr/bin/env python3\n"
++"#/system/bin/env python3\n"
+ "import http.server\n\n";
+ 
+ unsigned char footer[] =

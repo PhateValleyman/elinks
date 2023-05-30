@@ -373,7 +373,7 @@ exec_mailcap_command(void *data)
 				add_to_string(&string, "mailcap:");
 				add_to_string(&string, exec_mailcap->command);
 				if (exec_mailcap->file) {
-					add_to_string(&string, " && /system/bin/rm -f ");
+					add_to_string(&string, " && /bin/rm -f ");
 					add_to_string(&string, exec_mailcap->file);
 				}
 
@@ -1067,7 +1067,7 @@ subst_file(unsigned char *prog, unsigned char *file)
 		struct string s;
 
 		if (init_string(&s)) {
-			add_to_string(&s, "/system/bin/cat ");
+			add_to_string(&s, "/bin/cat ");
 			add_shell_quoted_to_string(&s, file, strlen(file));
 			add_to_string(&s, " | ");
 			add_string_to_string(&s, &name);
